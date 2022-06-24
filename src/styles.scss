@@ -1,0 +1,33 @@
+@use "~@uswds/uswds-core" as *;
+
+// body {
+//   background-color: color("violet-80v");
+//   color: color("white");
+// }
+
+// .container {
+//   @include grid-container;
+// }
+
+// .c-card {
+//   background-color: color("white");
+//   border-radius: units(1);
+//   color: color("ink");
+//   padding: units(2.5);
+//   padding-bottom: units(4);
+//   max-width: units("card-lg");
+// }
+
+// button {
+//   background-color: color("violet-60v");
+//   border: none;
+//   border-radius: units("05");
+//   color: color("white");
+//   cursor: pointer;
+//   padding: units(1);
+
+//   &:hover,
+//   &:focus {
+//     background-color: color("violet-80v");
+//   }
+// }
