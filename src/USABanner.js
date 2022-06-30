@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 
-
 function USABanner() {
   const ref = document.body;
 
