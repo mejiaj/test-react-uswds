@@ -1,4 +1,11 @@
-@use "@uswds/uswds-core" as *;
+// @use "~@uswds/uswds-core/index.scss" as *;
+
+//
+// ? Adding multiple entry points in uswds-core's package.json
+// ? requires us to import this way **unless** we set _index.scss as the default export. There's a "style" entrypoint, but that's not standard to NPM.
+// @use "@uswds/uswds-core/sass" as *;
+
+@use "@uswds/uswds-core/sass" as *;
 
 body {
   background-color: color("violet-80v");
