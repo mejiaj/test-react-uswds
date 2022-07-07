@@ -10,6 +10,7 @@ function App() {
       <hr />
       <UswdsCoreStyles />
       <hr />
+      <h1>Accordion component example</h1>
       <UsaAccordion />
     </div>
   );

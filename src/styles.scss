@@ -8,6 +8,8 @@
 // ? After adding `.env` and SASS includePaths we can call core like this
 @use "uswds-core" as *;
 
+// @forward "@uswds/usa-accordion/sass";
+
 body {
   background-color: color("violet-80v");
   color: color("white");

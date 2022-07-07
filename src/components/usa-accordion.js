@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import accordion from "@uswds/usa-accordion/js";
+// import accordion from "@uswds/usa-accordion/js";
 // import "@uswds/usa-accordion/sass";
 
 function UsaAccordion() {
@@ -7,10 +7,10 @@ function UsaAccordion() {
 
   useEffect(() => {
     // initialize accordion
-    accordion.on(ref);
+    // accordion.on(ref);
 
     return () => {
-      accordion.off();
+      // accordion.off();
     }
   });
 
