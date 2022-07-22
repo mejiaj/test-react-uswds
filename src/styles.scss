@@ -1,22 +1,34 @@
-// @use "~@uswds/uswds-core/index.scss" as *;
-
 //
 // ? Adding multiple entry points in uswds-core's package.json
-// ? requires us to import this way **unless** we set _index.scss as the default export. There's a "style" entrypoint, but that's not standard to NPM.
-// @use "@uswds/uswds-core/sass" as *;
+// ? requires us to import this way **unless** we set _index.scss as the default export. This way SASS can be imported in JS.
+// @use "@uswds/uswds-core" as *;
 
 // ? After adding `.env` and SASS includePaths we can call core like this
 @use "uswds-core" as *;
+
+// Works
+// $theme-font-path: "../../../assets/fonts";
+// $theme-font-path: "~@uswds/uswds-fonts/src/assets/fonts";
+// $theme-image-path: "~@uswds/usa-icon/src/img/uswds-icons";
+// $theme-font-path: "./fonts";
+// $theme-font-path: "../../../assets/fonts";
+
+// @forward "usa-accordion";
 
 // @forward "@uswds/usa-accordion/sass";
 
 body {
   background-color: color("violet-80v");
   color: color("white");
+  @include typeset("body");
 }
 
 .container {
   @include grid-container;
+}
+
+code {
+  @include typeset("mono");
 }
 
 .c-card {
@@ -26,18 +38,18 @@ body {
   padding: units(2.5);
   padding-bottom: units(4);
   max-width: units("card-lg");
-}
 
-button {
-  background-color: color("violet-60v");
-  border: none;
-  border-radius: units("05");
-  color: color("white");
-  cursor: pointer;
-  padding: units(1);
+  button {
+    background-color: color("violet-60v");
+    border: none;
+    border-radius: units("05");
+    color: color("white");
+    cursor: pointer;
+    padding: units(1);
 
-  &:hover,
-  &:focus {
-    background-color: color("violet-80v");
+    &:hover,
+    &:focus {
+      background-color: color("violet-80v");
+    }
   }
 }
