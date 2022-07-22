@@ -4,17 +4,16 @@
 // @use "@uswds/uswds-core" as *;
 
 // ? After adding `.env` and SASS includePaths we can call core like this
-@use "uswds-core" as *;
+// @use "uswds-core" as *;
 
-// Works
-// $theme-font-path: "../../../assets/fonts";
-// $theme-font-path: "~@uswds/uswds-fonts/src/assets/fonts";
-// $theme-image-path: "~@uswds/usa-icon/src/img/uswds-icons";
-// $theme-font-path: "./fonts";
-// $theme-font-path: "../../../assets/fonts";
+// USWDS-Fonts test
+@use "uswds-core" as * with (
+  $theme-font-path: "~@uswds/uswds-fonts/src/assets/fonts"
+);
+
+@forward "uswds-fonts";
 
 // @forward "usa-accordion";
-
 // @forward "@uswds/usa-accordion/sass";
 
 body {
