@@ -7,11 +7,9 @@
 // @use "uswds-core" as *;
 
 // USWDS-Fonts test
-@use "uswds-core" as * with (
+@use "uswds-fonts" as * with (
   $theme-font-path: "~@uswds/uswds-fonts/src/assets/fonts"
 );
-
-@forward "uswds-fonts";
 
 // @forward "usa-accordion";
 // @forward "@uswds/usa-accordion/sass";
