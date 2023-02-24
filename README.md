@@ -1,24 +1,30 @@
 # Getting started
 
-This project was created with Create React App, made for testing some USWDS features.
+This project was created with Create React App, made for testing some USWDS
+features.
 
 1. Run `npm install`
 1. Run `npm start`
 
-## Testing USWDS Core
+Testing branch for
+[`uswds/uswds/alpha-esm--components`](https://github.com/uswds/uswds/pull/5091).
 
-<!-- @TODO update this section -->
-There are currently two react components available:
+## How to test
 
-- `uswds-core-js.js`
-- `uswds-styles.js`
+1. Go to branch on USWDS, run `npm link`
+2. Go to this project and run `npm link @uswds/uswds`
+3. Run project via `npm start`
+4. Visit `src/components/usa-accordion.js` for component imports
+5. Accordion **should** expand and collapse with following two methods:
+6. Destructuring:
 
-These are stateless components that showcase using uswds-core styles **and** scripts.
+   ```js
+   import USWDS from "@uswds/uswds/js";
+   const { accordion } = USWDS; // deconstruct your components here
+   ```
 
-## Using USWDS-Core
+7. Standard import:
 
-<!-- @TODO add using USWDS-Core guidance -->
-
-## Using USWDS-Fonts
-
-<!-- @TODO add using USWDS-Fonts guidance -->
+   ```js
+   import accordion from "@uswds/uswds/js/usa-accordion";
+   ```

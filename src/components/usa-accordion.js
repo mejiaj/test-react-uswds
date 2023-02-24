@@ -1,16 +1,27 @@
 import { useEffect } from "react";
-// import accordion from "@uswds/usa-accordion/js";
-// import "@uswds/usa-accordion/sass";
+//* Standard import
+// import accordion from "@uswds/uswds/js/usa-accordion";
+
+//* Alternative method of import
+
+//! Official USWDS docs
+//! Doesn't work because of incorrect path
+// import USWDS from "@uswds/uswds/src/js";
+//! Should be:
+// import USWDS from "@uswds/uswds/js";
+// const { accordion } = USWDS; // deconstruct your components here
+
+import accordion from "@uswds/uswds/js/usa-accordion";
 
 function UsaAccordion() {
   const ref = document.body;
 
   useEffect(() => {
     // initialize accordion
-    // accordion.on(ref);
+    accordion.on(ref);
 
     return () => {
-      // accordion.off();
+      accordion.off();
     }
   });
 

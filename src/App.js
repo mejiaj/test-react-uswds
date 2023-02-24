@@ -1,6 +1,6 @@
 import "./styles.scss";
 import UswdsCoreTest from "./components/uswds-core-js";
-import UswdsCoreStyles from "./components/uswds-core-styles";
+// import UswdsCoreStyles from "./components/uswds-core-styles";
 import UsaAccordion from "./components/usa-accordion";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="container">
       <UswdsCoreTest />
       <hr />
-      <UswdsCoreStyles />
+      {/* <UswdsCoreStyles /> */}
       <hr />
       <h1>Accordion component example</h1>
       <UsaAccordion />
